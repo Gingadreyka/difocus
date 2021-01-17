@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.index-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.index-container a {
+  width: 350px;
+  height: 70px;
+  background-color: #5f5f5f;
+  border-radius: 5px;
+  color: #f2ecec;
+  text-decoration: none;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  margin: 10px;
+}
+
+.index-container a.git-hub {
+  background-color: #0d1117;
+}
+/*# sourceMappingURL=style.css.map */

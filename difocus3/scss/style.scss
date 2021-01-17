@@ -1,0 +1,14 @@
+.slides {
+  cursor: pointer;
+  img {
+    display: none;
+    user-select: none;
+    width: auto;
+    height: 100vh;
+    margin: 50px auto;
+    &.active {
+      display: block;
+    }
+  }
+  width: 100%;
+}

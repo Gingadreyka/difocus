@@ -1,0 +1,20 @@
+.slides {
+  cursor: pointer;
+  width: 100%;
+}
+
+.slides img {
+  display: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: auto;
+  height: 100vh;
+  margin: 50px auto;
+}
+
+.slides img.active {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background: #f9f9f9;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.adaptive-clip-patch-img {
+  display: block;
+  height: 500px;
+  max-width: 100%;
+  margin-top: 50px;
+  position: relative;
+}
+
+.adaptive-clip-patch-img img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.adaptive-clip-patch-img .clip-patch-text {
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: -1px;
+  padding-right: 5%;
+  padding-bottom: 10%;
+  background-color: #efefef;
+  -webkit-clip-path: polygon(85% 0, 100% 0, 100% 100%, 25% 100%);
+          clip-path: polygon(85% 0, 100% 0, 100% 100%, 25% 100%);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.adaptive-clip-patch-img .clip-patch-text p {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 6ch;
+  max-width: 600px;
+  text-align: right;
+}
+
+.adaptive-clip-patch-img .clip-patch-text p .red-dot {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #cb2626;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 830px) {
+  .adaptive-clip-patch-img {
+    height: 300px;
+  }
+  .adaptive-clip-patch-img .clip-patch-text {
+    -webkit-clip-path: polygon(100% 65%, 100% 100%, 20% 100%, 60% 65%);
+            clip-path: polygon(100% 65%, 100% 100%, 20% 100%, 60% 65%);
+    padding-bottom: 3%;
+  }
+  .adaptive-clip-patch-img .clip-patch-text p {
+    font-size: 3ch;
+  }
+  .adaptive-clip-patch-img .clip-patch-text p .red-dot {
+    width: 10px;
+    height: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .adaptive-clip-patch-img {
+    height: 300px;
+  }
+  .adaptive-clip-patch-img .clip-patch-text {
+    -webkit-clip-path: polygon(100% 65%, 100% 100%, 20% 100%, 60% 65%);
+            clip-path: polygon(100% 65%, 100% 100%, 20% 100%, 60% 65%);
+    padding-bottom: 3%;
+  }
+  .adaptive-clip-patch-img .clip-patch-text p {
+    font-size: 3ch;
+  }
+  .adaptive-clip-patch-img .clip-patch-text p .red-dot {
+    width: 10px;
+    height: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .adaptive-clip-patch-img {
+    height: 200px;
+  }
+  .adaptive-clip-patch-img .clip-patch-text {
+    -webkit-clip-path: polygon(45% 65%, 100% 65%, 100% 100%, 20% 100%);
+            clip-path: polygon(45% 65%, 100% 65%, 100% 100%, 20% 100%);
+    padding-bottom: 3%;
+  }
+  .adaptive-clip-patch-img .clip-patch-text p {
+    font-size: 2ch;
+  }
+  .adaptive-clip-patch-img .clip-patch-text p .red-dot {
+    width: 10px;
+    height: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .adaptive-clip-patch-img {
+    height: 200px;
+  }
+  .adaptive-clip-patch-img .clip-patch-text {
+    -webkit-clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+            clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+    padding-bottom: 3%;
+  }
+  .adaptive-clip-patch-img .clip-patch-text p {
+    font-size: 2ch;
+  }
+  .adaptive-clip-patch-img .clip-patch-text p .red-dot {
+    width: 10px;
+    height: 10px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
