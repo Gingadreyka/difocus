@@ -14,9 +14,7 @@ body {
 
 .box-container {
   width: 540px;
-  padding-top: 35px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 35px 50px;
   margin: 15px auto;
   background-color: #ffffff;
   border: 2px solid #f0f0f0;
@@ -65,7 +63,6 @@ body {
   cursor: pointer;
   position: relative;
   margin-left: 65px;
-  margin-bottom: 50px;
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
@@ -110,7 +107,6 @@ body {
   background: url(../icon_heart.svg) no-repeat;
   background-position: center;
   background-size: 30px;
-  height: 72px;
   width: 7%;
   outline: none;
   border: none;
@@ -119,5 +115,38 @@ body {
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
           order: 4;
+}
+
+@media screen and (max-width: 560px) {
+  .box-container {
+    width: 100%;
+    padding: 20px;
+  }
+  .box-container .title {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .box-container .price {
+    width: 100%;
+    font-size: 20px;
+  }
+  .box-container .price span {
+    font-size: 16px;
+  }
+  .box-container .btn {
+    width: 160px;
+    height: 50px;
+    margin: 10px 0;
+  }
+  .box-container .btn::before {
+    background-size: 20px;
+    font-size: 18px;
+    line-height: 1;
+    padding-left: 35px;
+  }
+  .box-container .favorite {
+    width: 14%;
+    margin: 10px 1%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
