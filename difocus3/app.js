@@ -1,17 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-  let imageSlider = [
-    'http://newshop.kupikupi.org/alboms/3/195/00002.jpeg',
-    'http://newshop.kupikupi.org/alboms/3/193/00006.jpeg',
-    'http://newshop.kupikupi.org/alboms/3/140/60-375.jpeg',
-    'http://img1.joyreactor.com/pics/post/anime-art-girl-sword-1403085.jpeg'
+  // Взял картинки из разных источников
+  // (сайт GitHub Pages - https, картинки с сайта http
+  // и браузер не даёт загружить смешанный контент)
+  let imageSliderArr = [
+    'https://99px.ru/sstorage/53/2017/12/tmb_215871_399815.png',
+    'img/meme.jpg',
+    'img/kotik-meme.jpg',
+    'https://img1.joyreactor.com/pics/post/anime-art-girl-sword-1403085.jpeg'
   ]
 
   let slidesHtml = document.querySelector('.slides')
   let currentSlide = 1
-  let imageSliderSum = imageSlider.length
+  let imageSliderArrSum = imageSliderArr.length
 
-  imageSlider.forEach((image, i) => {
+  imageSliderArr.forEach((image, i) => {
     i == 0 ?
       slidesHtml.innerHTML += `<img class="active" src="${image}" alt="">` :
       slidesHtml.innerHTML += `<img src="${image}" alt="">`
@@ -21,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentActive = document.querySelector('.active')
 
     currentActive.classList.remove('active')
-    if (currentSlide == imageSliderSum) {
+    if (currentSlide == imageSliderArrSum) {
       document.querySelector('.slides img').classList.add('active')
       currentSlide = 1
     } else {
