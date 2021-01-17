@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Взял картинки из разных источников
   // (сайт GitHub Pages - https, картинки с сайта http
-  // и браузер не даёт загружить смешанный контент)
+  // и браузер не даёт загружать смешанный контент)
   let imageSliderArr = [
     'https://99px.ru/sstorage/53/2017/12/tmb_215871_399815.png',
     'img/meme.jpg',
